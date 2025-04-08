@@ -80,9 +80,9 @@ int lexan(void) {
             tokenval = p;
             return symtable[p].token;
         }
-        else if (t == '\\') {  // دعم \ كرمز قسمة
+        else if (t == '\\') { 
             tokenval = NONE;
-            return '/';  // نعامله كأنه /
+            return '/';  
         }
         else if (t == EOF)
             return DONE;
@@ -270,4 +270,4 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-//لجين الدويك 
+ 
